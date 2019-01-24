@@ -9,30 +9,30 @@
 </head>
 <body>
     <h1>Daily Journal</h1>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
+    <div>
+        <div>
+            <label for="journalDate">Date of entry</label></br>
             <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-        <fieldset>
-            <label for="conceptsCovered">Concepts Covered</label>
+        </div>
+        <div>
+            <label for="conceptsCovered">Concepts Covered</label></br>
             <input type="text" name="conceptsCovered" id="conceptsCovered">
-        </fieldset>
-        <fieldset>
-            <label for="journalEntry">Journal Entry</label>
-            <textarea></textarea>
-        </fieldset>
-        <fieldset>
-            <label for="mood">Mood</label>
-            <select>
+        </div>
+        <div>
+            <label for="journalEntry">Journal Entry</label></br>
+            <textarea id="journalEntry"></textarea>
+        </div>
+        <div>
+            <label for="mood">Mood</label></br>
+            <select id="mood">
                 <option value="happy">Happy</option>
                 <option value="fine">Fine</option>
                 <option value="sad">Sad</option>
             </select>
-        </fieldset>
-        <input type="submit" value="Record Journal Entry"/>
+        </div>
+        <button id="entryButton">Record Journal Entry</button>
         <article class="entryLog" id="entryLog"></article>
-    </form>
+    </div>
     <script src="/scripts/journal.js"></script>
 </body>
 </html>
